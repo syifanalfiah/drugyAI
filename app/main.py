@@ -25,7 +25,7 @@ def predict():
     prediction = model.predict(data)
     prediction = unique_label[prediction[0]]
 
-    return render_template('index.html', message='Hasil Prediksi', prediction_text=f'Pecandu merupakan pengonsumsi narkoba {prediction}')
+    return render_template('index.html', message='Hasil Prediksi', prediction_text=f'Verified drug consumption {prediction}')
 
 
 @app.route('/result', methods=['POST'])
